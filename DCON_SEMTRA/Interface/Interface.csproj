@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5014FAE8-77FC-4A50-AE30-C86E16EA7A5A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Interface</RootNamespace>
+    <AssemblyName>Interface</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmLayout\FrmGerenciar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLayout\FrmGerenciar.Designer.cs">
+      <DependentUpon>FrmGerenciar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLayout\FrmGerenciarEfetivada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLayout\FrmGerenciarEfetivada.Designer.cs">
+      <DependentUpon>FrmGerenciarEfetivada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLayout\FrmConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLayout\FrmConta.Designer.cs">
+      <DependentUpon>FrmConta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLayout\FrmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLayout\FrmHome.Designer.cs">
+      <DependentUpon>FrmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLayout\FrmLogar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLayout\FrmLogar.Designer.cs">
+      <DependentUpon>FrmLogar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLayout\FrmFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLayout\FrmFuncionario.Designer.cs">
+      <DependentUpon>FrmFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLayout\FrmRelatorio\FrmPreviewRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLayout\FrmRelatorio\FrmPreviewRelatorio.Designer.cs">
+      <DependentUpon>FrmPreviewRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLayout\FrmRequisitar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLayout\FrmRequisitar.Designer.cs">
+      <DependentUpon>FrmRequisitar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLayout\FrmSubLayout\CsGerenciarOperacaoBloqueada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLayout\FrmSubLayout\CsGerenciarOperacaoBloqueada.Designer.cs">
+      <DependentUpon>CsGerenciarOperacaoBloqueada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLayout\FrmSubLayout\FrmConfirmarRequisicao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLayout\FrmSubLayout\FrmConfirmarRequisicao.Designer.cs">
+      <DependentUpon>FrmConfirmarRequisicao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLayout\FrmSubLayout\FrmRelatorioVendaHoraDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLayout\FrmSubLayout\FrmRelatorioVendaHoraDia.Designer.cs">
+      <DependentUpon>FrmRelatorioVendaHoraDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLayout\FrmSubLayout\FrmSolicitaLiberacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLayout\FrmSubLayout\FrmSolicitaLiberacao.Designer.cs">
+      <DependentUpon>FrmSolicitaLiberacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLayout\FrmTransacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLayout\FrmTransacao.Designer.cs">
+      <DependentUpon>FrmTransacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="FrmLayout\FrmGerenciar.resx">
+      <DependentUpon>FrmGerenciar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLayout\FrmGerenciarEfetivada.resx">
+      <DependentUpon>FrmGerenciarEfetivada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLayout\FrmConta.resx">
+      <DependentUpon>FrmConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLayout\FrmHome.resx">
+      <DependentUpon>FrmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLayout\FrmLogar.resx">
+      <DependentUpon>FrmLogar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLayout\FrmFuncionario.resx">
+      <DependentUpon>FrmFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLayout\FrmRelatorio\FrmPreviewRelatorio.resx">
+      <DependentUpon>FrmPreviewRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLayout\FrmRelatorio\ReportVendasHoraDia.rdlc" />
+    <EmbeddedResource Include="FrmLayout\FrmRequisitar.resx">
+      <DependentUpon>FrmRequisitar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLayout\FrmSubLayout\CsGerenciarOperacaoBloqueada.resx">
+      <DependentUpon>CsGerenciarOperacaoBloqueada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLayout\FrmSubLayout\FrmConfirmarRequisicao.resx">
+      <DependentUpon>FrmConfirmarRequisicao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLayout\FrmSubLayout\FrmRelatorioVendaHoraDia.resx">
+      <DependentUpon>FrmRelatorioVendaHoraDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLayout\FrmSubLayout\FrmSolicitaLiberacao.resx">
+      <DependentUpon>FrmSolicitaLiberacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLayout\FrmTransacao.resx">
+      <DependentUpon>FrmTransacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Objetos.ObjetosRelatorio.CsRelatorioVendaHoraDia.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graphic-design %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Objetos\Objetos.csproj">
+      <Project>{7146b440-2cf2-4ebd-a932-5e4413a213eb}</Project>
+      <Name>Objetos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Trabalho\Trabalho.csproj">
+      <Project>{b7c33718-d531-4204-a17f-c357bff49c50}</Project>
+      <Name>Trabalho</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FrmLayout\InterfaceUsuario\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
